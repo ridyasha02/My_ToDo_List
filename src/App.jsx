@@ -19,11 +19,11 @@ function App() {
   const [newDescription, setNewDescription] = useState("");
   const [taskDate, setTaskDate] = useState("");
 
-  // Add a task to the correct day
+ 
   const addTaskToDay = () => {
     if (newTask && newDescription && taskDate) {
       const date = new Date(taskDate);
-      const dayOfWeek = daysOfWeek[date.getDay()]; // Get the day of the week
+      const dayOfWeek = daysOfWeek[date.getDay()]; 
 
       setTasks((prev) => ({
         ...prev,
